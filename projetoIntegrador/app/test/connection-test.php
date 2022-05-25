@@ -15,7 +15,7 @@ $pdo = $conn -> getConnection();
 
 $tabela = $pdo -> query("SELECT * FROM users");
 
-$usuarios =  $tabela -> fetchAll(PDO::FETCH_ASSOC);
+$usuarios =  $tabela -> fetchAll(PDO::FETCH_ASSOC); //transformar os dados da tabela da maneira que pedimos (transforma SQL em PHP)
 
 print "<pre>";
 print_r($usuarios);
